@@ -56,4 +56,17 @@ tabled.  That project still needs to read the UART to
 acquire keystrokes fed to a Forth interpreter (under AtmelStart,
 and not using CDC ACM USB stuff).
 
+ - - -
 
+The Arduino IDE port of CamelForth was so firmly thought
+of that it was a surprise that the work hadn't been done.
+Not really sure why it wasn't done; seemed almost trivial
+to do the port (will see if that's remotely true, when it
+is done).
+
+Most likely sidetracked by recent QSPI flashROM efforts,
+which would have occured on an existing port rather than
+a new Arduino IDE port.  So it would appear that it is
+time to do the Arduino IDE work on CamelForth, as a first
+effort towards supporting QSPI flashROM (and fatfs, most
+likely) for CamelForth on the SAMD51 platform.
