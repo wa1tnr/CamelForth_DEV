@@ -1,0 +1,21 @@
+Wed Jun  5 02:05:33 UTC 2019
+
+Status of CamelForth projects by wa1tnr - June 2019
+
+A quick survey suggests that the QSPI flashROM
+work was done last for NeoTrellis M4 (SAMD51)
+and was based in YAFFA (only).
+
+This makes it appear there is no Arduino IDE based
+port of CamelForth as of June 1, 2019 (by wa1tnr).
+
+Other programmers may've done so (unknown!)
+
+TODO: Port CamelForth to Arduino IDE in the most
+rudamentary way (with as little changes to the
+upstream code as is practical).
+
+From there, consider adding QSPI flashROM support
+(from existing published sources on github by
+other programmers).
+
