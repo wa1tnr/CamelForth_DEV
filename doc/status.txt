@@ -56,6 +56,27 @@ tabled.  That project still needs to read the UART to
 acquire keystrokes fed to a Forth interpreter (under AtmelStart,
 and not using CDC ACM USB stuff).
 
+The USB work was limited to about 5 byte utterances with
+good fidelity.  Some type of ring buffer was next on the
+list of improvements, but that work has yet to occur in
+June 2019.
+
+A ring buffer would function pretty much the same as the
+stack in Shattuck's forth-like interpreter (for SAMD21).
+
+However, it would conform (here, in AtmelStart) more to
+the AtmelStart code base approach and technique wrt
+buffer management.  Examined code (from elsewhere) had
+exhibited complexities to be factored out (and in observing
+this, the (local) project stalled, around November 2018).
+
+CamelForth worked well enough under USB (CDC ACM, AtmelStart)
+to be useful to an end user, but just barely.  A string
+'chopper' routine was conceived to meet the (approx.) five
+byte limit of the existing technique, with fairly good
+fidelity.  Speed was traded for low (or no) character
+transmission loss.
+
  - - -
 
 The Arduino IDE port of CamelForth was so firmly thought
