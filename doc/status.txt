@@ -43,3 +43,17 @@ terminal (connected via USB).
 
 CP2104 is that bridge chip.
 
+ - - -
+
+Later it was apparent that direct USB was going to be
+an approach worth trying (it worked!)  whereas earlier,
+the UART hardware driver was tried on the notion that
+doing USB was going to be too steep of a learning curve.
+
+Eventually, USB became the usual method employed (CDC ACM)
+and the UART hardware driver work was (not abandoned, but)
+tabled.  That project still needs to read the UART to
+acquire keystrokes fed to a Forth interpreter (under AtmelStart,
+and not using CDC ACM USB stuff).
+
+
