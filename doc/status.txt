@@ -25,3 +25,21 @@ other programmers).
 As far as can be determined (quickly!) all CamelForth
 ports by wa1tnr, to date, are based in AtmelStart.
 That's as of 1 June 2019.
+
+The AtmelStart based programming began with the USART
+and (most likely) SAMD21.  The basic goal there was to
+create a primitive text interpreter from within the
+AtmelStart context.  This work was done near June 2018
+(last year).
+
+A hardware driver was written from scratch, with help
+from an oscilloscope (as well as the Silabs USB to UART
+bridge chip - in this instance, a PiUART (spelling?)).
+The driver produced did not read remote keyboard input
+(from a human at a serial terminal) but rather, dumped
+data from the SAMD target, via the TX/RX pair, through
+the UART to USB bridge, and then to the human at the
+terminal (connected via USB).
+
+CP2104 is that bridge chip.
+
