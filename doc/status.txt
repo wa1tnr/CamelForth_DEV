@@ -19,3 +19,9 @@ From there, consider adding QSPI flashROM support
 (from existing published sources on github by
 other programmers).
 
+
+ - - -
+
+As far as can be determined (quickly!) all CamelForth
+ports by wa1tnr, to date, are based in AtmelStart.
+That's as of 1 June 2019.
