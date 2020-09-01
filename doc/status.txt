@@ -1,8 +1,19 @@
 Wed Jun  5 02:05:33 UTC 2019
 
-refresh (no other edit): Tue Sep  1 14:59:24 UTC 2020
+Tue Sep  1 14:59:24 UTC 2020
 
 Status of CamelForth projects by wa1tnr - June 2019
+
+MISSING software usart emulation (bit-banged) was just
+re-discovered on 01 Sep 2020.
+
+https://github.com/wa1tnr/ainsuForth-d51/blob/2020-soft-usart-FOUND-b/main.c
+
+It was there all along, but on a side branch.
+
+Older text from previous version of this file, follows.
+
+ - - -
 
 A quick survey suggests that the QSPI flashROM
 work was done last for NeoTrellis M4 (SAMD51)
